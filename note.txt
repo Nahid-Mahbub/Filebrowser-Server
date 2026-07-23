@@ -1,0 +1,47 @@
+📁 Server File Support Guide (Python Server / Browser)
+🎬 ভিডিও ফাইল (Streaming এর জন্য ভালো)
+.mp4 → ⭐ সবচেয়ে ভালো (browser + mobile smooth play করে)
+.webm → ভালো (mostly browser এ চলে)
+.mkv → ❌ সাধারণত download হয়ে যায় (browser support কম)
+
+👉 Recommendation:
+✔ ভিডিও সবসময় MP4 (H.264 + AAC) রাখা সবচেয়ে ভালো
+
+🖼️ ছবি (Image Files)
+.jpg / .jpeg → ⭐ সবচেয়ে ভালো
+.png → ভালো (transparent support আছে)
+.webp → আধুনিক ও lightweight
+
+👉 এগুলো সব browser এ সরাসরি ওপেন হয়
+
+🎧 অডিও ফাইল
+.mp3 → ⭐ সবচেয়ে ভালো (সব জায়গায় চলে)
+.ogg → ভালো (browser support আছে)
+.wav → চলে কিন্তু file size বড়
+📄 ডকুমেন্ট ফাইল
+.pdf → browser এ সরাসরি দেখা যায়
+.txt → সরাসরি ওপেন হয়
+.html → web page হিসেবে ওপেন হয়
+🚫 যেসব ফাইল সাধারণত download হয়ে যায়
+.mkv
+.zip / .rar
+.exe
+.iso
+🧠 সহজ নিয়ম (মনে রাখার জন্য)
+
+✔ ভিডিও → MP4
+✔ ছবি → JPG / PNG
+✔ অডিও → MP3
+✔ ডকুমেন্ট → PDF
+
+⚙️ Python Server এর বাস্তবতা
+Python server শুধু file serve করে
+এটা streaming control করে না
+Browser নিজেই decide করে play নাকি download
+unsupported format = download শুরু হয়
+✅ Best Practice (ভালো ফলাফলের জন্য)
+
+👉 সব ভিডিও MP4 এ রাখো
+👉 ছবি JPG/PNG ব্যবহার করো
+👉 MKV দরকার হলে VLC দিয়ে play করো
+
